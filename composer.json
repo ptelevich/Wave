@@ -1,6 +1,7 @@
 {
     "name": "ptelevich/wave",
     "version": "0.0.1",
+    "minimum-stability": "dev",
     "description": "A php package to read WAV data",
     "keywords": [
         "php",
