@@ -1,11 +1,10 @@
 <?php
 
-namespace BoyHagemann\Wave\Chunk;
+namespace Fedoskin\Wave\Chunk;
 
 /**
  * Description of ChunkAbstract
  *
- * @author BoyHagemann
  */
 abstract class ChunkAbstract implements ChunkInterface
 {
@@ -40,7 +39,7 @@ abstract class ChunkAbstract implements ChunkInterface
 
     /**
      * 
-     * @see BoyhagemannWave\Chunk\ChunkInterface
+     * @see FedoskinWave\Chunk\ChunkInterface
      * @return string
      */
     public function getName()
@@ -50,7 +49,7 @@ abstract class ChunkAbstract implements ChunkInterface
     
     /**
      * 
-     * @see BoyhagemannWave\Chunk\ChunkInterface
+     * @see FedoskinWave\Chunk\ChunkInterface
      * @return integer
      */
     public function getPosition()
@@ -71,7 +70,7 @@ abstract class ChunkAbstract implements ChunkInterface
     
     /**
      * 
-     * @see BoyhagemannWave\Chunk\ChunkInterface
+     * @see FedoskinWave\Chunk\ChunkInterface
      * @return integer
      */
     public function getSize()

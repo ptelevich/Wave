@@ -1,12 +1,8 @@
 <?php
 
-namespace BoyHagemann\Wave\Chunk;
+namespace Fedoskin\Wave\Chunk;
 
-/**
- *
- * @author boyhagemann
- */
-interface ChunkInterface 
+interface ChunkInterface
 {
     /**
      * 

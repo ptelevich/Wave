@@ -1,11 +1,10 @@
 <?php
 
-namespace BoyHagemann\Wave;
+namespace Fedoskin\Wave;
 
 /**
  * Description of Channel
  *
- * @author boyhagemann
  */
 class Channel 
 {
