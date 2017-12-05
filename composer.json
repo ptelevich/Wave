@@ -19,10 +19,5 @@
     "target-dir": "Fedoskin/Wave",
     "require": {
         "php": ">=5.3.3"    
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "master"
-        }
     }
 }
