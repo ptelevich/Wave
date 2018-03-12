@@ -16,7 +16,7 @@ class Wave
      * @var string $filename
      */
     protected $filename;
-    
+
     /**
      * This is the total size in bytes of the wave file
      *
@@ -199,41 +199,44 @@ class Wave
      * 
      */
     protected function readChunks()
-    {         
-       $fh = $this->getFileHandler();        
+    {
+        $fh = $this->getFileHandler();
 
-       $name = fread($fh, 4);
-       $size = current(unpack('V', fread($fh, 4))); 
-       $position = ftell($fh);
+        $name = fread($fh, 4);
+        $size = @current(unpack('V', fread($fh, 4)));
+        if ($size === null) {
+            return true;
+        }
+        $position = ftell($fh);
 
-       fseek($fh, $position + $size);
+        fseek($fh, $position + $size);
 
-       switch(strtolower($name)) {
+        switch(strtolower($name)) {
 
-           case Chunk\Fmt::NAME:
-               $chunk = new Chunk\Fmt;
-               break;
+            case Chunk\Fmt::NAME:
+                $chunk = new Chunk\Fmt;
+                break;
 
-           case Chunk\Data::NAME:
-               $chunk = new Chunk\Data;
-               break;
+            case Chunk\Data::NAME:
+                $chunk = new Chunk\Data;
+                break;
 
-           default:
-               $chunk = new Chunk\Other();
-               $chunk->setName($name);
-       }        
+            default:
+                $chunk = new Chunk\Other();
+                $chunk->setName($name);
+        }
 
-       // Check if there is a chunk detected
-       if($chunk) {
-        $chunk->setSize($size);
-        $chunk->setPosition($position);
-        $this->setChunk($chunk);
-       }
-       
-       // If the data chunk is found, then stop reading other (useless) chunks
-       if(!$chunk instanceof Chunk\Data) {
-           $this->readChunks();
-       }
+        // Check if there is a chunk detected
+        if($chunk) {
+            $chunk->setSize($size);
+            $chunk->setPosition($position);
+            $this->setChunk($chunk);
+        }
+
+        // If the data chunk is found, then stop reading other (useless) chunks
+        if(!$chunk instanceof Chunk\Data) {
+            $this->readChunks();
+        }
     }
 
     /**
