@@ -1,6 +1,6 @@
 {
-    "name": "fedoskin/wave",
-    "version": "0.0.1",
+    "name": "ptelevich/wave",
+    "version": "0.0.2",
     "minimum-stability": "dev",
     "description": "A php package to read WAV data",
     "keywords": [
@@ -13,11 +13,16 @@
     ],
     "autoload": {
         "psr-0": {
-            "Fedoskin\\Wave\\": ""
+            "BoyHagemann\\Wave\\": ""
         }
     },
-    "target-dir": "Fedoskin/Wave",
+    "target-dir": "BoyHagemann/Wave",
     "require": {
         "php": ">=5.3.3"    
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
     }
 }
