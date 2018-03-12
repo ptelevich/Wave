@@ -1,13 +1,12 @@
 <?php
 
-namespace BoyHagemann\Wave\Chunk;
+namespace Fedoskin\Wave\Chunk;
 
-use Boyhagemann\Wave\Channel;
+use Fedoskin\Wave\Channel;
 
 /**
  * Description of Data
  *
- * @author boyhagemann
  */
 class Data extends ChunkAbstract
 {
@@ -28,7 +27,7 @@ class Data extends ChunkAbstract
     
     /**
      * 
-     * @see BoyhagemannWave\Chunk\ChunkInterface
+     * @see FedoskinWave\Chunk\ChunkInterface
      * @return string
      */
     public function getName()

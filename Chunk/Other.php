@@ -1,11 +1,10 @@
 <?php
 
-namespace BoyHagemann\Wave\Chunk;
+namespace Fedoskin\Wave\Chunk;
 
 /**
  * Description of Data
  *
- * @author boyhagemann
  */
 class Other extends ChunkAbstract
 {
@@ -39,7 +38,7 @@ class Other extends ChunkAbstract
     /**
      * 
      * @param string $data
-     * @return \BoyhagemannWave\Chunk\Other
+     * @return \FedoskinWave\Chunk\Other
      */
     public function setData($data) 
     {

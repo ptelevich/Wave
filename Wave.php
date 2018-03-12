@@ -1,12 +1,11 @@
 <?php
 
-namespace BoyHagemann\Wave;
+namespace Fedoskin\Wave;
 
 /**
  * This class can read the chunks in the wave file and can analyze the
  * metadata and amplitudes.
  *
- * @author boyhagemann
  */
 class Wave 
 {
@@ -85,7 +84,7 @@ class Wave
      * Set the chunk parts
      * 
      * @param array $chunks
-     * @return \BoyhagemannWave\Wave
+     * @return \FedoskinWave\Wave
      */
     public function setChunks(Array $chunks) 
     {
@@ -111,8 +110,8 @@ class Wave
     /**
      * Set the file handler to read the wave file byte data
      * 
-     * @param \BoyhagemannWave\Stream $fileHandler
-     * @return \BoyhagemannWave\Wave
+     * @param \FedoskinWave\Stream $fileHandler
+     * @return \FedoskinWave\Wave
      */
     public function setFileHandler(Stream $fileHandler) 
     {
@@ -143,7 +142,7 @@ class Wave
      * The default number of steps is 100
      * 
      * @param integer $steps
-     * @return \BoyhagemannWave\Wave
+     * @return \FedoskinWave\Wave
      */
     public function setSteps($steps) 
     {
@@ -351,7 +350,7 @@ class Wave
     /**
      * Get the amplitude of a single channel and a single data block
      * 
-     * @param \BoyhagemannWave\Channel $channel
+     * @param \FedoskinWave\Channel $channel
      */
     protected function readData(Channel $channel)
     {

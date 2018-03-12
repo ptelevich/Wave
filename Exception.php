@@ -1,10 +1,9 @@
 <?php
 
-namespace BoyHagemann\Wave;
+namespace Fedoskin\Wave;
 
 /**
  * Description of Exception
  *
- * @author boyhagemann
  */
 class Exception extends \Exception {}
