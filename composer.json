@@ -16,7 +16,7 @@
             "BoyHagemann\\Wave\\": ""
         }
     },
-    "target-dir": "BoyHagemann/Wave",
+    "target-dir": "",
     "require": {
         "php": ">=5.3.3"    
     },
