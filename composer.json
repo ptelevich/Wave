@@ -16,7 +16,7 @@
             "BoyHagemann\\Wave\\": ""
         }
     },
-    "target-dir": "",
+    "target-dir": "fedoskin/wave",
     "require": {
         "php": ">=5.3.3"    
     },
