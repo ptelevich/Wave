@@ -16,7 +16,7 @@
             "Fedoskin\\Wave\\": ""
         }
     },
-    "target-dir": "fedoskin/wave",
+    "target-dir": "",
     "require": {
         "php": ">=5.3.3"    
     },
