@@ -1,6 +1,6 @@
 {
     "name": "ptelevich/wave",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "minimum-stability": "dev",
     "description": "A php package to read WAV data",
     "keywords": [
@@ -16,13 +16,13 @@
             "Fedoskin\\Wave\\": ""
         }
     },
-    "target-dir": "",
+    "target-dir": "Fedoskin/Wave",
     "require": {
         "php": ">=5.3.3"    
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.1.3-dev"
+            "dev-master": "0.1.4-dev"
         }
     }
 }
