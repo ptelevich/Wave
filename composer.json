@@ -1,5 +1,5 @@
 {
-    "name": "ptelevich/wave",
+    "name": "fedoskin/wave",
     "version": "0.0.3",
     "minimum-stability": "dev",
     "description": "A php package to read WAV data",
